@@ -1,0 +1,317 @@
+/* Design Systems
+Fonts:
+font-family: 'Poppins', sans-serif;
+font-family: 'Righteous', cursive;
+- FONT SIZES SYSTEM (px)
+    10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+- SPACING SYSTEM (px)
+    2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+/* ------------------- */
+/*     Global  Reset         */
+/* ------------------- */
+
+/* https://piccalil.li/blog/a-modern-css-reset/ */
+
+/* Box sizing */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+/* Reset Font Weights */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 400;
+}
+
+html {
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* *************************** */
+/* ------- Header Section ---- */
+/* *************************** */
+
+header {
+  background-color: #7133cc;
+  min-height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  max-width: 120rem;
+  margin: 0 auto;
+  padding-top: 3.6rem;
+}
+
+.logo-div img {
+  width: 12.4rem;
+}
+
+.nav-list {
+  list-style: none;
+  padding-left: 0;
+
+  display: flex;
+  gap: 4.6rem;
+}
+
+.nav-list a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: rgba(255, 255, 255, 0.664);
+  transition: color 0.25s;
+}
+
+.nav-list a:hover {
+  color: rgba(255, 255, 255, 0.877);
+}
+
+.nav-list li:last-child {
+  margin-right: 7.6rem;
+}
+
+.nav-btn {
+  background-color: rgba(27, 189, 239, 0.808);
+  color: #fff !important;
+  padding: 1.2rem 2.8rem;
+  transition: all 0.25s !important;
+}
+
+.nav-btn:hover {
+  background-color: rgb(27, 189, 239);
+}
+
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.hero-left-side {
+  width: 38%;
+}
+
+.hero-heading {
+  font-size: 5.2rem;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.4;
+}
+
+.hero-description {
+  font-size: 1.4rem;
+  color: rgba(255, 255, 255, 0.637);
+  width: 85%;
+
+  margin-top: 3.6rem;
+}
+
+.hero-right-side {
+  width: 49%;
+}
+
+.hero-right-side img {
+  display: inline-block;
+  width: 100%;
+}
+
+/* *************************** */
+/*Product Specification Section*/
+/* *************************** */
+
+.product-specifications-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  max-width: 120rem;
+  margin: 0 auto;
+  padding-top: 10rem;
+}
+
+.product-left-side {
+  width: 60%;
+}
+
+.product-left-side img {
+  width: 52.2rem;
+}
+
+.product-header {
+  font-size: 3.2rem;
+  font-weight: 600;
+  margin-bottom: 5.2rem;
+
+  width: 90%;
+}
+
+.specification-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.specification-heading-div {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+
+  margin-bottom: 1.2rem;
+}
+
+.arrow-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.blue {
+  fill: #1b98f5;
+}
+
+.green {
+  fill: #1faa59;
+}
+
+.orange {
+  fill: #e07c24;
+}
+
+.specification-heading-div h2 {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.specification-list-item p {
+  font-size: 1.4rem;
+  width: 60%;
+  margin-left: 4.6rem;
+}
+
+/* *************************** */
+/* Feature Section*/
+/* *************************** */
+
+.feature-section {
+  max-width: 120rem;
+  margin: 0 auto;
+  margin-top: 10rem;
+  margin-bottom: 6.4rem;
+}
+
+.feature-section-heading {
+  text-align: center;
+  font-size: 3.2rem;
+  font-weight: 600;
+
+  margin-bottom: 4.2rem;
+}
+
+.feature-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 2.4rem;
+  margin-bottom: 1.2rem;
+}
+
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+
+  padding: 1.8rem 0;
+  box-shadow: 0 1px 10px rgba(105, 102, 102, 0.637);
+  border-radius: 2rem;
+  transition: transform 0.25s;
+}
+
+.feature-card:hover {
+  transform: scale(1.05);
+}
+
+.feature-card-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature-card-img-div {
+  /* background-color: #e07c24; */
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.feature-card-img-div img {
+  width: 50%;
+}
+
+.bg-color-1 {
+  background-color: rgba(223, 184, 185, 0.356);
+}
+
+.bg-color-2 {
+  background-color: rgb(248, 205, 177, 0.356);
+}
+
+.bg-color-3 {
+  background-color: rgb(189, 210, 211, 0.356);
+}
+
+.bg-color-4 {
+  background-color: rgb(214, 174, 220, 0.356);
+}
+
+.feature-card-description h2 {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.feature-card-description p {
+  font-size: 1.4rem;
+  font-weight: 500;
+  width: 60%;
+  text-align: center;
+  margin-top: 1rem;
+}
