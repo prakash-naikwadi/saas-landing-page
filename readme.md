@@ -31,10 +31,10 @@ This is a assignment given in **"JavaScript Full Stack Web Developer Bootcamp"**
 ## 📌 What I Learn
 
 👉 learn about `transform:scale(1.1)` property.  
-👉 Learn about adding some animations using `transition` property on hover effect.  
-👉 Learn new call to action section design and implemented it.  
-👉 placed elements using flex and width property.  
-👉 How to develope full fledge landing page.
+👉 Learn about adding some animations using the `transition` property on the hover effect.  
+👉 Learn a new call to action section design and implemented it.  
+👉 placed elements using flex and width properties.  
+👉 How to develop full fledge landing page.
 
 ## 📬 Connect With Me
 
